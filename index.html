@@ -7,15 +7,16 @@
 </head>
 <body>
     <h1 style="text-transform: uppercase;text-align: center;color:blue;font-family: cursive;">sarli varisai 1 to 5 240 bpm both hands by prabhu R</h1>
-    <video id="myvideo" src="https://drive.google.com/file/d/1ZCIOvaFDYRGDYXmFFZavUey7cDNjIOlH/preview" controls></video>
+    <iframe id="myvideo" src="https://drive.google.com/file/d/1ZCIOvaFDYRGDYXmFFZavUey7cDNjIOlH/preview" allow="autoplay" controls></iframe>
 </body>
 <script>
-    var vid=document.getElementById('myvideo');
-    function resizer(){
-        var width=window.innerWidth;
-        vid.setAttribute('width',width);
+    var vid = document.getElementById('myvideo');
+    function resizer() {
+        var width = window.innerWidth;
+        vid.setAttribute('width', width);
+        vid.setAttribute('height', (width * 9) / 16); // maintain 16:9 aspect ratio
     }
     resizer();
-    window.onresize=resizer;
+    window.onresize = resizer;
 </script>
 </html>
