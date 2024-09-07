@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-transform: uppercase;text-align: center;color:blue;font-family: cursive;">sarli varisai 1 to 5 240 bpm both hands by prabhu R</h1>
+    <video id="myvideo" src="lions.mp4" controls></video>
+</body>
+<script>
+    var vid=document.getElementById('myvideo');
+    function resizer(){
+        var width=window.innerWidth;
+        vid.setAttribute('width',width);
+    }
+    resizer();
+    window.onresize=resizer;
+</script>
+</html>
